@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SDL3DMapTest" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SDL3DMapTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../../../../../Program Files (x86)/CodeBlocks/SFML-2.5.1/include" />
+					<Add directory="../../../../../../Program Files (x86)/CodeBlocks/glew-2.1.0/include" />
+					<Add directory="../../../../../../Program Files (x86)/CodeBlocks/glfw-3.3/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lsfml-window" />
+					<Add option="-lsfml-graphics" />
+					<Add option="-lsfml-system" />
+					<Add option="-lsfml-main" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SDL3DMapTest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../../../../../../Program Files (x86)/CodeBlocks/glew-2.1.0/include" />
+					<Add directory="../../../../../../Program Files (x86)/CodeBlocks/glfw-3.3/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="opengl32" />
+					<Add library="glu32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="../../../../../../Program Files (x86)/CodeBlocks/SFML-2.5.1/include" />
+			<Add directory="../../../../../../Program Files (x86)/CodeBlocks/glew-2.1.0/include" />
+			<Add directory="../../../../../../Program Files (x86)/CodeBlocks/glfw-3.3/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lsfml-window" />
+			<Add option="-lsfml-graphics" />
+			<Add option="-lsfml-system" />
+			<Add option="-lsfml-main" />
+			<Add option="-lGLEW" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add directory="../../../../../../Program Files (x86)/CodeBlocks/SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="include/Block.h" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Cube.h" />
+		<Unit filename="include/Ground.h" />
+		<Unit filename="include/Map.h" />
+		<Unit filename="include/OBJLoader.h" />
+		<Unit filename="include/SceneOpenGL.h" />
+		<Unit filename="include/Shader.h" />
+		<Unit filename="include/Texture.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Block.cpp" />
+		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/Cube.cpp" />
+		<Unit filename="src/Ground.cpp" />
+		<Unit filename="src/Map.cpp" />
+		<Unit filename="src/OBJLoader.cpp" />
+		<Unit filename="src/SceneOpenGL.cpp" />
+		<Unit filename="src/Shader.cpp" />
+		<Unit filename="src/Texture.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
